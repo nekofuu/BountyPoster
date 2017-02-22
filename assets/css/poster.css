@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #232323;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+	display: inline;
+}
+
+#controls {
+	width: 30%;
+	height: 100%;
+	float: left;
+	margin: 20px 0 0 20px;
+	background: black;
+	color: white;
+	border-radius: 15px;
+}
+
+#controls h3 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+	margin: 20px 0;
+}
+
+#controls hr {
+	clear: both;
+	width: 85%;
+}
+
+#ctrlList {
+	list-style: none;
+}
+
+#ctrlList label {
+	display: block;
+}
+
+#ctrlList input {
+	width: 80%;
+}
+
+#poster {
+	margin: 10px 0 0 5%;
+	border: 1px black solid;
+	background: white;
+	position: fixed;
+	clear: both;
+}

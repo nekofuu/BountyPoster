@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bounty Poster Generator</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/poster.css">
+</head>
+<body onload="Draw()">
+	<aside id="controls">
+		<h3>Controls</h3>
+
+		<hr>
+
+		<ul id="ctrlList">
+			<li>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="posterName" placeholder="Character Name">
+			</li>
+			<li>
+				<label for="bounty">Bounty:</label>
+				<input type="number" name="bounty" id="posterBounty" placeholder="Character Bounty">
+			</li>
+			<li>
+				<label for="imageFile">Image:</label>
+				<input type="file" name="imageFile" id="imgFile">
+			</li>
+			<li>
+				<label for="downsample">Downsample Level:</label>
+				<select name="downsample" id="downsample">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</li>
+			<li>
+				<label for="scale">Scale: <span id="scalePercent">100%</span></label>
+				<input type="range" name="scale" id="imageScale" min="0" max="100" value="100">
+			</li>
+			<li>
+				<label for="posX">X Position:</label>
+				<input type="range" name="posX" class="position" min="-100" max="0" value="0">
+			</li>
+			<li>
+				<label for="posY">Y Position:</label>
+				<input type="range" name="posY" class="position" min="-100" max="0" value="0">
+			</li>
+			<li>
+				<label for="wanted">Wanted:</label>
+				<select name="wanted" id="wantedLevel">
+					<option value="Dead or Alive">Dead or Alive</option>
+					<option value="Dead">Dead</option>
+					<option value="Alive">Alive</option>
+				</select>
+			</li>
+		</ul>
+	</aside>
+
+	<canvas id="poster" width="450px" height="600px"></canvas>
+
+	<script type="text/javascript" src="assets/js/imageScaler.js"></script>
+	<script type="text/javascript" src="assets/js/poster.js"></script>
+</body>
+</html>
